@@ -1,0 +1,26 @@
+[
+  {
+    "id": "layout",
+    "name": "Layout",
+    "repeatable": false,
+    "value": "layout.json"
+  },
+  {
+    "id": "home",
+    "name": "Home",
+    "repeatable": false,
+    "value": "home.json"
+  },
+  {
+    "id": "quoteslist",
+    "name": "QuotesList",
+    "repeatable": false,
+    "value": "quotesList.json"
+  },
+  {
+    "id": "quote",
+    "name": "Quote",
+    "repeatable": true,
+    "value": "quote.json"
+  }
+]
