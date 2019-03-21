@@ -3,6 +3,20 @@
 # Prismic React Site Example
 This project is an implementation of the Prismic multipage site demo using ReactJS. Built up from the starter project, it's meant to provide you with an idea of how to build your own sites using the Prismic features. Read our [user guide](https://intercom.help/prismicio/examples/react-js-samples/sample-multi-page-site-with-navigation-in-reactjs) if you need guidance on how to use this repository.
 
+You don't need to clone this repo. Install the CLI and simply run:
+```
+> $ prismic theme https://github.com/hypervillain/prismic-react-hooks-example --conf src/prismic-configuration.js
+```
+
+You will also need to update `public/index.html` manually, and add your newly created domain name:
+
+```html
+  <script>
+    window.prismic = {
+      endpoint: 'https://hooksbucket.prismic.io/api/v2'
+    };
+  </script>
+```
 ## Install dependencies
 ```
 > $ npm install
@@ -11,11 +25,6 @@ This project is an implementation of the Prismic multipage site demo using React
 Build and open your browser to http://localhost:3000.
 ```
 > $ npm start
-```
-
-## Launch the test runner in the interactive watch mode
-```
-> $ npm run test
 ```
 
 ## Build the app for production to the build folder
