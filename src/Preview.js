@@ -22,7 +22,7 @@ const Preview = ({
 
     // Retrieve the correct URL for the document being previewed.
     // Once fetched, redirect to the given url
-    client.previewSession(params.token, linkResolver, '/').then(history.push);
+    client.previewSession(params.token, linkResolver, '/').then(url => history.push(url));
   });
   return null;
 }
